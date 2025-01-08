@@ -1,0 +1,106 @@
+/* =============== THEME DARK INSPIRADO NO SPOTIFY =============== */
+
+/* ===== Estilo Global ===== */
+* {
+    color: #FFFFFF;
+    background-color: #191414;  /* Fundo escuro inspirado no Spotify */
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== QMainWindow ===== */
+QMainWindow {
+    background-color: #191414;
+}
+
+/* ===== Barra de Título (TitleBar) ===== */
+#TitleBar {
+    background-color: #191414;
+
+    /* Controla a altura mínima da barra */
+    /* min-height: 15px; */
+    /* Se quiser dar uma certeza maior, pode usar max-height também, mas
+       o Qt pode se recusar se o conteúdo precisar de mais espaço. */
+    max-height: 35px;
+
+    /* Exemplo para visualizar a barra (remova depois) */
+    /* border: 1px solid red; */
+}
+
+/* ===== Label do Título na Barra ===== */
+#TitleLabel {
+    color: #FFFFFF;
+    font-size: 14px; /* Título um pouco maior que o resto */
+    padding-top: 5px;
+    padding-left: 5px; /* um pequeno espaço antes do texto */
+    max-height: 20px;
+    margin-left: 5px;
+}
+
+/* ----------------------------------------------------
+   Botões na Barra de Título
+   (#BtnCloseBar, #BtnMinimizeBar, #BtnSettingsBar)
+-----------------------------------------------------*/
+QPushButton#BtnCloseBar,
+QPushButton#BtnMinimizeBar,
+QPushButton#BtnSettingsBar {
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+
+    /* Forçar altura um pouco menor que 25px para caber na barra */
+    min-width: 30px;    /* Largura mínima para não ficar apertado */
+    min-height: 20px;   /* Combina com min-height da barra */
+    max-height: 20px;     
+
+    margin: 2px 5px;      /* Margem lateral para não grudarem */
+    font-size: 16px;    /* Deixa o símbolo um pouco maior */
+}
+
+/* Hover nos botões da barra */
+QPushButton#BtnCloseBar:hover,
+QPushButton#BtnMinimizeBar:hover,
+QPushButton#BtnSettingsBar:hover {
+    background-color: #333333;
+    border-radius: 4px;
+}
+
+/* Dar destaque verde no botão Fechar, se quiser */
+QPushButton#BtnCloseBar:hover {
+    background-color: #b9341d;
+    color: #ffffff;
+}
+
+/* ===== WebEngineView ===== */
+QWebEngineView {
+    background-color: #191414;
+}
+
+/* ===== Diálogos (SettingsDialog etc.) ===== */
+QDialog {
+    background-color: #191414;
+}
+
+/* ===== Labels e RadioButtons no QDialog ===== */
+QDialog QLabel,
+QRadioButton {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+/* ===== Botões padrão (OK, Cancelar etc.) ===== */
+QPushButton {
+    color: #ffffff;
+    background-color: #333333;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 13px;
+    margin: 4px;
+}
+QPushButton:hover {
+    background-color: #b9341d; 
+    border: 1px solid #b9341d;
+}
