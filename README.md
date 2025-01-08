@@ -1,5 +1,8 @@
 # YT Music Player
 
+![image](https://github.com/user-attachments/assets/ce7536bf-bbca-4423-9530-113351459201)
+
+
 Player de música **frameless** em **PyQt5** que incorpora o site [YouTube Music](https://music.youtube.com), com bandeja (tray icon), configuração de ação ao fechar, e opção de **dark theme** customizado.
 
 ## Recursos Principais
@@ -126,3 +129,4 @@ No **Windows**, separe `origem;destino` com ponto-e-vírgula. (Em Linux/macOS, u
 ## Licença
 
 hihi
+
